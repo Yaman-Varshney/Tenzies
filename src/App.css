@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin : 0;
+  background-color: #0B2434;
+}
+
+main {
+  background-color: #F5F5F5;
+  height: 600px;
+  border-radius: 10px;
+  margin: 75px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 25px;
+  margin: 25px;
+}
+
+.die-face {
+  height: 80px;
+  width: 80px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 215, 178);
+  cursor: pointer;
+}
+
+.die-num {
+  font-size: 35px;
+}
+
+.roll-btn {
+  background-color: #5035FF;
+  color: white;
+  height: 50px;
+  width : 150px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 25px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.roll-btn:focus {
+  outline: none;
+}
+
+.roll-btn:active {
+  box-shadow: inset 5px 5px 15px -5px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 75px;
+  font-weight: 600;
+  margin: 0px auto;
+}
+
+p {
+  font-size: 20px;
+}
